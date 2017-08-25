@@ -1,6 +1,15 @@
 # AWS Serverless Image Handler Lambda wrapper for Thumbor
 A solution to dynamically handle images on the fly, utilizing Thumbor (thumbor.org) 
 
+## Notes from Doug
+To build, I got a shell into an ubuntu docker instance, installed the prerequisite libs, then built as outlined below.
+
+The built zip file and CloudFormation templates were uploaded to the `thumbnailer-lambda-source-us-west-2` S3 bucket.
+
+The CloudFormation template was run, creating the AWS lambda and AWS API Gateway stuff.
+
+The end result is an HTTP endpoint (currently https://q8udooxx0b.execute-api.us-west-2.amazonaws.com/image/) that acts as a proxy to thumbor, so you can just throw a (signed) thumbor path at the end of that and it should work (e.g., https://q8udooxx0b.execute-api.us-west-2.amazonaws.com/image/Fra_uWcou7dse-P51bf2PrmNQvs=/250x150/smart/upload.wikimedia.org/wikipedia/commons/3/3d/LARGE_elevation.jpg).
+
 ## OS/Python Environment Setup
 ```bash
 sudo yum-config-manager --enable epel

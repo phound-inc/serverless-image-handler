@@ -4,7 +4,7 @@
   "Parameters": {
     "OriginS3Bucket": {
       "Description": "S3 bucket that will source your images.",
-      "Default": "original-images-bucket-name",
+      "Default": "swoot-assets",
       "Type": "String",
       "ConstraintDescription": "Must be a valid S3 Bucket.",
       "MinLength": "1",
@@ -71,20 +71,7 @@
       }
     },
     "S3EndPointMap": {
-      "us-east-1":      {"endpoint": "https://s3.amazonaws.com"},
-      "us-east-2":      {"endpoint": "https://s3.us-east-2.amazonaws.com"},
-      "us-west-1":      {"endpoint": "https://s3-us-west-1.amazonaws.com"},
       "us-west-2":      {"endpoint": "https://s3-us-west-2.amazonaws.com"},
-      "ca-central-1":   {"endpoint": "https://s3.ca-central-1.amazonaws.com"},
-      "eu-west-1":      {"endpoint": "https://s3-eu-west-1.amazonaws.com"},
-      "eu-central-1":   {"endpoint": "https://s3.eu-central-1.amazonaws.com"},
-      "eu-west-2":      {"endpoint": "https://s3.eu-west-2.amazonaws.com"},
-      "ap-northeast-1": {"endpoint": "https://s3-ap-northeast-1.amazonaws.com"},
-      "ap-northeast-2": {"endpoint": "https://s3.ap-northeast-2.amazonaws.com"},
-      "ap-southeast-1": {"endpoint": "https://s3-ap-southeast-1.amazonaws.com"},
-      "ap-southeast-2": {"endpoint": "https://s3-ap-southeast-2.amazonaws.com"},
-      "ap-south-1":     {"endpoint": "https://s3.ap-south-1.amazonaws.com"},
-      "sa-east-1":      {"endpoint": "https://s3-sa-east-1.amazonaws.com"}
     }
   },
   "Resources": {
