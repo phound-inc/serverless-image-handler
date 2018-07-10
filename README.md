@@ -1,3 +1,5 @@
+# THIS IS DEAD. THUMBOR WAS KIND OF DUMB(OR).
+
 # AWS Serverless Image Handler Lambda wrapper for Thumbor
 A solution to dynamically handle images on the fly, utilizing Thumbor (thumbor.org) 
 
